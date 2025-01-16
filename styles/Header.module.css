@@ -1,0 +1,19 @@
+.main {
+    width: 100vw;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}  
+
+.logo {
+    width: 208px;
+    height: 25px;
+    min-width: 208px;
+}
