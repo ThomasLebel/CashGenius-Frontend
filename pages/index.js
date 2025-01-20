@@ -1,5 +1,4 @@
-import Home from '../components/Home';
-import Header from '../components/Header';
+import Home from "../components/Homepage/Home";
 
 function Index() {
   return (

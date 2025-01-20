@@ -12,3 +12,17 @@ body {
 * {
   box-sizing: border-box;
 }
+
+/* Header */
+
+.menu-link {
+  @apply hover:text-red-600 cursor-pointer
+}
+
+.drawer-item {
+  @apply border-mainColor rounded-md p-1 hover:text-mainColor cursor-pointer mb-5
+}
+
+.menu-item {
+  @apply border-mainColor rounded-md p-1 hover:text-mainColor cursor-pointer mx-4 px-3
+}
