@@ -1,6 +1,8 @@
 import Header from "../Header/Header";
 import HeroSection from "./HeroSection";
 import StatsWithVideo from "./StatsWithVideo";
+import Steps from "./Steps";
+import Reviews from "./Reviews";
 
 
 function Home() {
@@ -13,6 +15,8 @@ function Home() {
         <HeroSection />
         {/* Section Présentation Cash Genius */}
         <StatsWithVideo/>
+        <Steps/>
+        <Reviews/>
       </main>
     </>
   );

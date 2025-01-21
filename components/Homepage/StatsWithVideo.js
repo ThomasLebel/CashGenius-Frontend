@@ -29,8 +29,8 @@ const StatsWithVideo = () => {
 
   return (
     <section className=" bg-backgroundColor">
-      <div className="flex flex-col items-center mt-20">
-        <h1 className="font-bold text-2xl text-center md:text-4xl ">
+      <div className="flex flex-col items-center mt-20 ">
+        <h1 className="font-bold text-2xl text-center md:text-4xl w-3/4">
           PROGRAMME CASH GENIUS 🧞‍♂️
         </h1>
         <p className="text-secondaryColor font-light text-sm mt-5 text-center px-10 md:text-lg">
@@ -61,7 +61,7 @@ const StatsWithVideo = () => {
             noBorder={true}
           />
         </div>
-        <div className="mt-10 lg:w-[40vw] w-[80vw] lg:h-[47.5vh] h-[25vh] border-4 rounded-md border-mainColor">
+        <div className="my-10 lg:w-[40vw] w-[80vw] lg:h-[47.5vh] h-[25vh] border-4 rounded-md border-mainColor">
           <ReactPlayer
             width="100%"
             height="100%"
@@ -70,7 +70,7 @@ const StatsWithVideo = () => {
             controls="true"
           />
         </div>
-        <Button name="JE M'INSCRIS AU GENIUS PROGRAMME"></Button>
+        <Button className="pt-10" name="JE M'INSCRIS AU GENIUS PROGRAMME"></Button>
       </div>
     </section>
   );

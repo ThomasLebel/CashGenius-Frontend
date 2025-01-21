@@ -26,3 +26,10 @@ body {
 .menu-item {
   @apply border-mainColor rounded-md p-1 hover:text-mainColor cursor-pointer mx-4 px-3
 }
+
+/* Testimonials */
+
+.instagram-item {
+  @apply lg:px-2 cursor-pointer hover:opacity-90
+}
+
