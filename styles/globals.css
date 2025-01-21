@@ -13,6 +13,11 @@ body {
   box-sizing: border-box;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: white; /* Change la couleur des flèches */
+}
+
 /* Header */
 
 .menu-link {
@@ -33,3 +38,16 @@ body {
   @apply lg:px-2 cursor-pointer hover:opacity-90
 }
 
+.swiper-button-next,
+  .swiper-button-prev {
+    @apply !text-gray-300
+  }
+
+  .swiper-pagination {
+    @apply !-bottom-0 ; /* Positionne les points en bas */
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply !bg-mainColor ; /* Positionne les points en bas */
+  }
+  
