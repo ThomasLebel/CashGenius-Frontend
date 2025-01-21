@@ -67,7 +67,7 @@ const StatsWithVideo = () => {
             height="100%"
             url="https://youtu.be/5gw5fqD2_Pc"
             light="/comment-ca-fonctionne.webp"
-            controls="true"
+            controls={true}
           />
         </div>
         <Button className="pt-10" name="JE M'INSCRIS AU GENIUS PROGRAMME"></Button>

@@ -3,6 +3,7 @@ import HeroSection from "./HeroSection";
 import StatsWithVideo from "./StatsWithVideo";
 import Steps from "./Steps";
 import Reviews from "./Reviews";
+import FAQSection from "./FAQSection";
 
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
         <StatsWithVideo/>
         <Steps/>
         <Reviews/>
+        <FAQSection/>
       </main>
     </>
   );
