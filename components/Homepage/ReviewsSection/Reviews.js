@@ -1,11 +1,11 @@
 import InstagramCarousel from "./InstagramCarousel";
 import ReviewCarousel from "./ReviewCarousel";
-import Button from "../Button";
+import Button from "../../Shared/Button";
 
 const Reviews = () => {
   return (
-    <section className=" bg-backgroundColor">
-      <div className="flex flex-col items-center pt-20 bg-pink">
+    <section>
+      <div className="flex flex-col items-center pt-20">
         <h1 className="font-bold text-2xl text-center md:text-4xl w-3/4">
           ILS TÉMOIGNENT POUR VOUS 🎥
         </h1>
@@ -29,7 +29,7 @@ const Reviews = () => {
           className="-bottom-2 left-0 min-h-[80px] w-screen mt-20"
           style={{
             backgroundImage: `url(/wave.png)`,
-            backgroundPosition: "center",
+            backgroundPosition: "left",
             backgroundSize: "cover",
           }}
         ></div>

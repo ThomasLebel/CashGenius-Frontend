@@ -7,6 +7,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #F8F8F8;
 }
 
 * {
@@ -38,6 +39,8 @@ body {
   @apply lg:px-2 cursor-pointer hover:opacity-90
 }
 
+/* Carousel */
+
 .swiper-button-next,
   .swiper-button-prev {
     @apply !text-gray-300
@@ -50,4 +53,14 @@ body {
   .swiper-pagination-bullet-active {
     @apply !bg-mainColor ; /* Positionne les points en bas */
   }
+
+  .ant-motion-collapse {
+    transition: height 3s ease !important;/* Remplace 0.5s par la durée souhaitée */
+  }
+
+/* Formulaire */
+
+.form-input {
+  @apply border rounded-md p-2 w-full mb-5 focus:border-mainColor focus:outline-none
+}
   

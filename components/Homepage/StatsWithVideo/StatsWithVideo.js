@@ -1,7 +1,7 @@
 import NumberIncrementation from "./NumberIncrementation";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import Button from "../Button";
+import Button from "../../Shared/Button";
 
 import dynamic from "next/dynamic";
 
