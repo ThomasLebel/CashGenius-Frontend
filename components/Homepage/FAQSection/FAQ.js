@@ -30,14 +30,14 @@ const FAQ = () => {
             return (
               <Panel
                 header={
-                  <p className="text-secondaryColor font-medium text-sm ">
+                  <p className="text-secondaryColor font-medium text-sm lg:text-base ">
                     {item.question}
                   </p>
                 }
                 key={i}
                 className="bg-white !rounded-md mb-5 shadow-md !overflow-hidden !border-none"
               >
-                <p className="text-secondaryColor font-light text-sm">
+                <p className="text-secondaryColor font-light text-sm lg:text-base">
                   {item.answer}
                 </p>
               </Panel>

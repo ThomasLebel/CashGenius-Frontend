@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 
 function Menu({currentPage}) {
   return (
@@ -7,14 +9,14 @@ function Menu({currentPage}) {
         currentPage === "/" && "border"
       } menu-item`}
     >
-      <a className="menu-link">GENIUS PROGRAMME</a>
+      <Link href="/" className="menu-link">GENIUS PROGRAMME</Link>
     </li>
     <li
       className={`${
-        currentPage === "/bonus" && "border"
+        currentPage === "/comparateur-bonus" && "border"
       } menu-item`}
     >
-      <a className="menu-link">LES BONUS</a>
+      <Link href="/comparateur-bonus" className="menu-link">LES BONUS</Link>
     </li>
     <li
       className={`${
@@ -25,7 +27,7 @@ function Menu({currentPage}) {
     </li>
     <li
       className={`${
-        currentPage === "/tutos" && "border"
+        currentPage === "/#inscription" && "border"
       } menu-item px-3 mr-3`}
     >
       <a className="menu-link"> INSCRIPTION GRATUITE</a>

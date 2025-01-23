@@ -5,6 +5,7 @@ import Steps from "./StepsSection/Steps";
 import Reviews from "./ReviewsSection/Reviews";
 import FAQ from "./FAQSection/FAQ";
 import RegistrationForm from "../Shared/RegistrationForm/RegistrationForm";
+import Footer from "../Footer/Footer";
 
 
 function Home() {
@@ -12,7 +13,7 @@ function Home() {
   return (
     <>
       <Header></Header>
-      <main className=" h-screen font-sans">
+      <main className=" font-sans">
         {/* Ecran principal de présentation */}
         <HeroSection />
         {/* Section Présentation Cash Genius */}
@@ -22,6 +23,7 @@ function Home() {
         <FAQ/>
         <RegistrationForm/>
       </main>
+      <Footer></Footer>
     </>
   );
 }

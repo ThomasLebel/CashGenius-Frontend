@@ -37,7 +37,7 @@ function Header({ drawerActive, currentPage, closeDrawer }) {
           </li>
           <li
             className={`${
-              currentPage === "/bonus" && "border"
+              currentPage === "/comparateur-bonus" && "border"
             } drawer-item`}
           >
             <a className="menu-link">LES BONUS</a>
