@@ -22,11 +22,11 @@ body {
 /* Header */
 
 .menu-link {
-  @apply hover:text-red-600 cursor-pointer
+  @apply hover:text-mainColor cursor-pointer
 }
 
 .drawer-item {
-  @apply border-mainColor rounded-md p-1 hover:text-mainColor cursor-pointer mb-5
+  @apply border-mainColor rounded-md p-1 hover:!text-mainColor cursor-pointer mb-5
 }
 
 .menu-item {

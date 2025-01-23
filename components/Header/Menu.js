@@ -20,10 +20,10 @@ function Menu({currentPage}) {
     </li>
     <li
       className={`${
-        currentPage === "/tutos" && "border"
+        currentPage === "/tutoriels" && "border"
       } menu-item`}
     >
-      <a className="menu-link">LES TUTOS</a>
+      <Link href="/tutoriels" className="menu-link">LES TUTOS</Link>
     </li>
     <li
       className={`${

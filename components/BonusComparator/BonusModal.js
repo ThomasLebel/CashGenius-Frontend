@@ -1,6 +1,7 @@
 import { Modal } from "antd";
-import { useState, useEffect } from "react";
-import ReactPlayer from "react-player";
+import dynamic from "next/dynamic";
+
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const BonusModal = ({
   openModal,
@@ -12,13 +13,7 @@ const BonusModal = ({
   videoLink,
   registerLink,
 }) => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  if (!isClient) return null;
+  
 
   // Choix des étapes à afficher selon le genre de bonus
 

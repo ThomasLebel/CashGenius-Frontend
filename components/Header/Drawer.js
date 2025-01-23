@@ -43,10 +43,10 @@ function Header({ drawerActive, currentPage, closeDrawer }) {
           </li>
           <li
             className={`${
-              currentPage === "/tutos" && "border"
+              currentPage === "/tutoriels" && "border"
             } drawer-item`}
           >
-            <a className="menu-link">LES TUTOS</a>
+            <Link href="/tutoriels" className="menu-link">LES TUTOS</Link>
           </li>
           <li
             className={`${
