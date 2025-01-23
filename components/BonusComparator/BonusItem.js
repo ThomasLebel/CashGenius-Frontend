@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-
 const BonusItem = ({
   number,
   name,
@@ -9,7 +8,8 @@ const BonusItem = ({
   type,
   asterisk,
   handleModal,
-  videoLink
+  videoLink,
+  registerLink,
 }) => {
   return (
     <div className="w-[280px]  h-[450px] bg-white mb-4 sm:m-4 rounded-xl flex flex-col justify-around items-center shadow-xl">
@@ -42,12 +42,17 @@ const BonusItem = ({
       </span>
       <div className="w-full flex justify-around mt-3">
         <button
-          onClick={() => handleModal(name, title, amount, type, videoLink)}
+          onClick={() =>
+            handleModal(name, title, amount, type, videoLink, registerLink)
+          }
           className=" bg-white hover:bg-gray-200 text-mainColor border-2 border-mainColor font-sans font-normal text-xs py-2 rounded-md w-28"
         >
           En savoir plus
         </button>
-        <button className=" bg-[#ce0251] hover:bg-[#ac054a] text-white font-sans font-normal text-xs rounded-md w-28">
+        <button
+          onClick={() => window.open(registerLink, "_blank")}
+          className=" bg-[#ce0251] hover:bg-[#ac054a] text-white font-sans font-normal text-xs rounded-md w-28"
+        >
           Profite du bonus
         </button>
       </div>

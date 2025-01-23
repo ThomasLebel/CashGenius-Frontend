@@ -11,14 +11,16 @@ const BonusComparator = () => {
   const [amount, setAmount] = useState("");
   const [type, setType] = useState("");
   const [videoLink, setVideoLink] = useState("");
+  const [registerLink, setRegisterLink] = useState("");
 
-  const handleModal = (name, title, amount, type, videoLink) => {
+  const handleModal = (name, title, amount, type, videoLink, registerLink) => {
     if (openModal) {
       setName("");
       setTitle("");
       setAmount("");
       setType("");
       setVideoLink("");
+      setRegisterLink("");
       setOpenModal(false);
     } else {
       console.log(name);
@@ -26,8 +28,9 @@ const BonusComparator = () => {
       setTitle(title);
       setAmount(amount);
       setType(type);
-      setOpenModal(true);
       setVideoLink(videoLink);
+      setRegisterLink(registerLink);
+      setOpenModal(true);
     }
   };
 
@@ -47,6 +50,7 @@ const BonusComparator = () => {
                 asterisk={bonus.asterisk}
                 handleModal={handleModal}
                 videoLink={bonus.videoLink}
+                registerLink={bonus.registerLink}
               />
             );
           })}
@@ -58,6 +62,7 @@ const BonusComparator = () => {
             amount={amount}
             type={type}
             videoLink={videoLink}
+            registerLink={registerLink}
           />
         </div>
       </div>

@@ -10,6 +10,7 @@ const BonusModal = ({
   amount,
   type,
   videoLink,
+  registerLink,
 }) => {
   const [isClient, setIsClient] = useState(false);
 
@@ -52,7 +53,8 @@ const BonusModal = ({
         <>
           <li className="pb-2">
             Lorsque votre dépôt sera validé, vous serez automatiquement crédité
-            du montant de votre dépôt jusqu'à {amount}€ sous forme de freebets en plus du montant de votre dépôt en argent réel
+            du montant de votre dépôt jusqu'à {amount}€ sous forme de freebets
+            en plus du montant de votre dépôt en argent réel
           </li>
         </>
       );
@@ -195,7 +197,10 @@ const BonusModal = ({
           >
             Fermer
           </button>
-          <button className=" bg-[#ce0251] hover:bg-[#ac054a] text-white font-sans font-normal text-sm p-2 rounded-md mx-2">
+          <button
+            onClick={() => window.open(registerLink, "_blank")}
+            className=" bg-[#ce0251] hover:bg-[#ac054a] text-white font-sans font-normal text-sm p-2 rounded-md mx-2"
+          >
             Profite du bonus
           </button>
         </div>
