@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Drawer from './Drawer'
 import Menu from "./Menu";
+import Link from "next/link";
 
 function Header() {
   const [isSelected, setIsSelected] = useState();
@@ -20,9 +21,11 @@ function Header() {
 
   return (
       <header className="w-screen h-[70px] bg-white flex items-center justify-between  fixed z-50 top-0 drop-shadow-sm">
-        <div className="ml-5">
-          <Image  width={208} height={25} src="/CashGeniusLogo.png" alt="Logo Cash Genius"></Image>
+        <Link href="/" className="menu-link">
+        <div className="ml-5 cursor-pointer">
+          <Image  width={208} height={25} src="/CashGeniusLogo.png" alt="Logo Cash Genius"></Image> 
         </div>
+        </Link>
         <Menu currentPage={currentPage}/>
         <div className="flex items-start mr-10 xl:hidden">
           <FontAwesomeIcon

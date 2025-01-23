@@ -1,5 +1,6 @@
 import { Drawer } from "antd";
 import { CloseOutlined } from "@ant-design/icons";
+import Link from "next/link";
 
 function Header({ drawerActive, currentPage, closeDrawer }) {
   return (
@@ -31,16 +32,14 @@ function Header({ drawerActive, currentPage, closeDrawer }) {
               currentPage === "/" && "border"
             } drawer-item`}
           >
-            <a className="menu-link">
-              GENIUS PROGRAMME
-            </a>
+            <Link href="/" className="menu-link">GENIUS PROGRAMME</Link>
           </li>
           <li
             className={`${
               currentPage === "/comparateur-bonus" && "border"
             } drawer-item`}
           >
-            <a className="menu-link">LES BONUS</a>
+            <Link href="/comparateur-bonus" className="menu-link">LES BONUS</Link>
           </li>
           <li
             className={`${

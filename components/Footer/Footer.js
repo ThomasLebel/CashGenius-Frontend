@@ -37,10 +37,6 @@ const Footer = () => {
         <div className="lg:w-1/4">
         <h2 className="mt-5 font-bold text-2xl lg:mt-0">Contact</h2>
         <div className="flex mt-5">
-        <FontAwesomeIcon className="mr-5" icon={faPhoneAlt} size="xl" color="#f51465"></FontAwesomeIcon>
-        <span>07 69 36 42 64 </span>
-        </div>
-        <div className="flex mt-5">
         <FontAwesomeIcon className="mr-5" icon={faEnvelope} size="xl" color="#f51465"></FontAwesomeIcon>
         <span>contact@cash-genius.com </span>
         </div>

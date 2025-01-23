@@ -1,7 +1,16 @@
 import Image from "next/image";
-import Button from "../Shared/Button";
 
-const BonusItem = ({ number, name, title, amount, type, asterisk }) => {
+
+const BonusItem = ({
+  number,
+  name,
+  title,
+  amount,
+  type,
+  asterisk,
+  handleModal,
+  videoLink
+}) => {
   return (
     <div className="w-[280px]  h-[450px] bg-white mb-4 sm:m-4 rounded-xl flex flex-col justify-around items-center shadow-xl">
       <div className="w-full p-3">
@@ -32,7 +41,10 @@ const BonusItem = ({ number, name, title, amount, type, asterisk }) => {
         {type}*
       </span>
       <div className="w-full flex justify-around mt-3">
-        <button className=" bg-white hover:bg-gray-200 text-mainColor border-2 border-mainColor font-sans font-normal text-xs py-2 rounded-md w-28">
+        <button
+          onClick={() => handleModal(name, title, amount, type, videoLink)}
+          className=" bg-white hover:bg-gray-200 text-mainColor border-2 border-mainColor font-sans font-normal text-xs py-2 rounded-md w-28"
+        >
           En savoir plus
         </button>
         <button className=" bg-[#ce0251] hover:bg-[#ac054a] text-white font-sans font-normal text-xs rounded-md w-28">
