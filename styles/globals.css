@@ -54,10 +54,6 @@ body {
     @apply !bg-mainColor ; /* Positionne les points en bas */
   }
 
-  .ant-motion-collapse {
-    transition: height 3s ease !important;/* Remplace 0.5s par la durée souhaitée */
-  }
-
 /* Formulaire */
 
 .form-input {
