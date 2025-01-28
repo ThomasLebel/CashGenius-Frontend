@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Button from "../Button";
-import ClipLoader from "react-spinners/ClipLoader";
+
 
 const RegistrationForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -11,7 +11,7 @@ const RegistrationForm = () => {
   const [error, setError] = useState("");
   const [registred, setRegistred] = useState(false);
   const [loading, setLoading] = useState(false)
-
+  
   const emailPattern =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const phonePattern = /^(0|\+33)[1-9]([-. ]?[0-9]{2}){4}$/;
@@ -33,7 +33,7 @@ const RegistrationForm = () => {
         sponsorship: sponsorship,
       };
       setLoading(true)
-      fetch("http://localhost:3000/applicants/signup", {
+      fetch(`${process.env.NEXT_PUBLIC_SERVER_IP}/applicants/signup`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(userToRegister),
