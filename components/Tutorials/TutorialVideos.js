@@ -25,9 +25,9 @@ const TutorialVideos = () => {
             return (
               <button
                 key={i}
-                className={`hover:bg-[#ac054a]" font-medium px-3 py-2 m-2 rounded-md text-mainColor text-xs w-[125px] border-2 border-mainColor hover:bg-gray-200 ${
+                className={`font-medium px-3 py-2 m-2 rounded-md text-[#ce0251] text-xs w-[125px] border-2 border-[#ce0251] hover:bg-gray-200 ${
                   website.name === websiteSelected &&
-                  "bg-[#ce0251] hover:!bg-[#ac054a] text-white border-none"
+                  "bg-[#ce0251] hover:!bg-[#ac054a] !text-white border-none"
                 }`}
                 onClick={() => handleClick(website.registerVideo, website.name, website.registerLink)}
               >
@@ -43,8 +43,9 @@ const TutorialVideos = () => {
             className="absolute top-0 left-0"
             width="100%"
             height="100%"
-            url={videoLink}
+            url="https://youtu.be/5gw5fqD2_Pc"
             controls={true}
+            light={`/MiniaturesTutos/${websiteSelected === "PARIONS SPORT" ? "PARIONSSPORT.webp" : `${websiteSelected}.webp`}`}
           />
         </div>
         <div onClick={() => window.open(registerLink, "_blank")} className="w-full flex justify-center mt-10">

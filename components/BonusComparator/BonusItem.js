@@ -19,6 +19,7 @@ const BonusItem = ({
         </h2>
       </div>
       <Image
+        alt={`Logo ${name}`}
         width={80}
         height={80}
         src={`/LogoSites/${
@@ -45,7 +46,7 @@ const BonusItem = ({
           onClick={() =>
             handleModal(name, title, amount, type, videoLink, registerLink)
           }
-          className=" bg-white hover:bg-gray-200 text-mainColor border-2 border-mainColor font-sans font-normal text-xs py-2 rounded-md w-28"
+          className=" bg-white hover:bg-gray-200 text-[#ce0251] border-2 border-[#ce0251] font-sans font-normal text-xs py-2 rounded-md w-28"
         >
           En savoir plus
         </button>

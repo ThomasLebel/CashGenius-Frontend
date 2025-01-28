@@ -32,13 +32,13 @@ function Menu({currentPage}) {
     >
       <Link href="#inscription" className="menu-link">INSCRIPTION GRATUITE</Link>
     </li>
-    <li
+    {/* <li
       className={`${
         currentPage === "/affilies" && "border"
       } menu-item`}
     >
       <a className="menu-link">ESPACE AFFILIÉ</a>
-    </li>
+    </li> */}
   </ul>
  );
 }
