@@ -9,7 +9,7 @@ const RegistrationForm = () => {
   const [sponsorship, setSponsorship] = useState("");
 
   return (
-    <section>
+    <section id="inscription">
       <div className=" w-screen flex flex-col items-center py-20">
         <h2 className="font-bold text-sm md:text-base mb-2 text-secondaryColor text-center px-2">
           Programme de 4 à 5 semaines GRATUIT et valable une fois par personne.

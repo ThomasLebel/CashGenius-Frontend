@@ -53,9 +53,7 @@ function Header({ drawerActive, currentPage, closeDrawer }) {
               currentPage === "/tutos" && "border"
             } drawer-item`}
           >
-            <a className="menu-link">
-              INSCRIPTION GRATUITE
-            </a>
+            <Link href="#inscription" className="menu-link">INSCRIPTION GRATUITE</Link>
           </li>
           <li
             className={`${

@@ -30,7 +30,7 @@ function Menu({currentPage}) {
         currentPage === "/#inscription" && "border"
       } menu-item px-3 mr-3`}
     >
-      <a className="menu-link"> INSCRIPTION GRATUITE</a>
+      <Link href="#inscription" className="menu-link">INSCRIPTION GRATUITE</Link>
     </li>
     <li
       className={`${

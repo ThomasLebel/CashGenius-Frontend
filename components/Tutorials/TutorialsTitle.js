@@ -6,7 +6,7 @@ const ComparatorTitle = () => {
         Les Tutos - Comment s'inscrire facilement ? 💪
         </h1>
         <p className="text-secondaryColor font-light text-sm mt-5 md:text-lg">
-        Notre comparateur des différents bonus de bienvenue des bookmakers va te permettre de savoir quels sites t'intéressent sans avoir à les visiter un par un.
+        L’inscription sur un site de paris sportif peut paraître laborieuse au premier abord, avec ces vidéos tutos votre inscription deviendra un jeu d’enfant !
         </p>
       </div>
     </section>
