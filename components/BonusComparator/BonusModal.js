@@ -162,7 +162,7 @@ const BonusModal = ({
               width="100%"
               height="100%"
               url={videoLink}
-              light={`/miniatures/${
+              light={`/Miniatures/${
                 name === "PARIONS SPORT" ? "PARIONSSPORT" : name
               }.webp`}
               controls={true}

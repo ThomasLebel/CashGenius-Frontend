@@ -31,7 +31,7 @@ const Steps = () => {
           description="Après 4 à 6 semaines de parcours entre les sites t'ayant demandé 30 minutes par semaine pour pouvoir effectuer les étapes, tous les bonus ont été obtenus, transformés en cash et le programme est terminé. Tu récupères tes 175€ + 300/400€ de bénéfices."
         />
       </div>
-      <div className="mt-10">
+      <div className="mt-20">
         <Button className='mt-10'name="JE DÉCOUVRE LES BONUS DU MOMENT"></Button>
       </div>
       <div

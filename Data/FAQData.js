@@ -5,22 +5,22 @@ const FAQ = [
   },
   {
     question: "📚 Quelles sont les conditions pour pouvoir participer ?",
-    answer: "Il faut respecter les conditions suivantes : - Etre majeur - Habiter en France -Avoir un compte bancaire français - Avoir 175€ de disponible",
+    answer: "Il faut respecter les conditions suivantes : Etre majeur / Habiter en France / Avoir un compte bancaire français / Avoir 175€ de disponible",
   },
   {
     question: "😡 175€ au départ ? Je croyais que c'était gratuit",
-    answer: "L'inscription à la méthode est gratuite, mais au démarrage, il faut effectuer une inscription et un dépôt sur 3 sites de paris différents (50€, 50€ et 75€ ). Cela permet d'effectuer les 1ers paris afin de récupérer les bonus de bienvenue et utiliser les bénéfices pour les inscriptions suivantes.",
+    answer: "L'inscription à la méthode et l'accompagnement sont totalement gratuits, mais au démarrage, il faut effectuer une inscription et un dépôt sur 3 sites de paris différents (50€, 50€ et 75€ ). Cela permet d'effectuer les 1ers paris afin de récupérer les bonus de bienvenue et utiliser les bénéfices pour les inscriptions suivantes.",
   },
   {
     question: "💪 Je peux faire la méthode sans votre programme non ?",
-    answer: "Alors oui, tu peux essayer de faire la méthode tout seul. Malgrès tout il faut savoir dans quel ordre s'inscrire sur les sites, quel paris prendre en fonction du bonus proposé etc .. On a déjà fait tout le travail pour toi et on te propose la méthode gratuitement, pourquoi prendre le risque de perdre de l'argent ?",
+    answer: "Alors oui, tu peux essayer de faire la méthode tout seul. Malgrès tout, il faut savoir dans quel ordre s'inscrire sur les sites, quel paris prendre en fonction du bonus proposé etc .. On a déjà fait tout le travail pour toi et on te propose la méthode gratuitement, pourquoi prendre le risque de perdre de l'argent ?",
   },
   {
     question: "⏳ Pourquoi le programme dure entre 4 à 5 semaines ?",
-    answer: "C'est vrai que ça peut paraître long mais ça ne te prendra pas plus de 30 min par semaine. Ce qui prends le plus de temps c'est d'attendre que les sites vérifient tes documents et d'attendre de recevoir l'argent sur ton compte bancaire lors des retraits.",
+    answer: "C'est vrai que ça peut paraître long mais ça ne te prendra pas plus de 30 min par semaine. Ce qui prend le plus de temps c'est d'attendre que les sites vérifient tes documents et d'attendre de recevoir l'argent sur ton compte bancaire lors des retraits.",
   },
   {
-    question: "🤪 C'est quoi l'intêret de ces sites de proposer de rembourser nos paris ?",
+    question: "🤪 C'est quoi l'intérêt de ces sites de proposer de rembourser nos paris ?",
     answer: "Les sites de paris en ligne proposent tous des bonus de bienvenue, le but est d'attirer de nouveaux clients en leur proposant de prendre un 1er pari sans risque de pertes.",
   },
   {
@@ -29,7 +29,7 @@ const FAQ = [
   },
   {
     question: "😭 Pourquoi on peut faire la méthode qu'une seule fois ?",
-    answer: "Le Genius Programme repose sur les bonus de bienvenue que propose les différents sites de paris afin de pouvoir faire du bénéfice sans risque. Ces bonus sont valable que pour les nouveaux inscrits et donc valable qu'une seule fois par personne, adresse postale et compte bancaire. Malgré tout, tu peux faire participer tes proches.",
+    answer: "Le Genius Programme repose sur les bonus de bienvenue que proposent les différents sites de paris afin de pouvoir faire du bénéfice sans risque. Ces bonus ne sont valables que pour les nouveaux inscrits et donc qu'une seule fois par personne, adresse postale et compte bancaire. Malgré tout, tu peux faire participer tes proches.",
   }
 ];
 

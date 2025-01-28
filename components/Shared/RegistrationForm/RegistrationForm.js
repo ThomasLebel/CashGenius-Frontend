@@ -11,7 +11,7 @@ const RegistrationForm = () => {
   const [error, setError] = useState("");
   const [registred, setRegistred] = useState(false);
   const [loading, setLoading] = useState(false)
-  
+
   const emailPattern =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const phonePattern = /^(0|\+33)[1-9]([-. ]?[0-9]{2}){4}$/;
@@ -53,7 +53,7 @@ const RegistrationForm = () => {
   return (
     <section id="inscription">
       <div className=" w-screen flex flex-col items-center py-20">
-        <h2 className="font-bold text-sm md:text-base mb-2 text-secondaryColor text-center px-2">
+        <h2 className="font-bold text-sm md:text-base mb-5 text-secondaryColor text-center px-2 w-4/5">
           Programme de 4 à 5 semaines GRATUIT et valable une fois par personne.
         </h2>
 
