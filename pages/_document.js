@@ -6,7 +6,7 @@ export default function Document(ctx) {
   return (
     <Html lang="fr">
       <Head />
-      <body>
+      <body className='font-sans'>
         <Main />
         <NextScript />
       </body>
