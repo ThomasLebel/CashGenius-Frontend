@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: [
-          'sans-serif',
+          'Poppins',
           'Tahoma',
           'Verdana',
           'Arial',
