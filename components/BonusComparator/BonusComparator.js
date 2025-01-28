@@ -55,6 +55,7 @@ const BonusComparator = () => {
             );
           })}
           <BonusModal
+            key={openModal ? "open" : "closed"}
             openModal={openModal}
             handleModal={handleModal}
             name={name}

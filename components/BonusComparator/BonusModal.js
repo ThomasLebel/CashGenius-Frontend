@@ -1,5 +1,6 @@
 import { Modal } from "antd";
 import dynamic from "next/dynamic";
+import { useState, useEffect } from "react";
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
@@ -131,6 +132,20 @@ const BonusModal = ({
       break;
   }
 
+  
+
+  const [isPlaying, setIsPlaying] = useState(true)
+
+
+  useEffect(() => {
+    if (!openModal) {
+      setIsPlaying(false);
+    } else {
+      setIsPlaying(true)
+    }
+    console.log(isPlaying)
+  }, [openModal]);
+
   return (
     <Modal
       className="font-sans mt-16"
@@ -158,6 +173,7 @@ const BonusModal = ({
             style={{ paddingBottom: "56.25%" }}
           >
             <ReactPlayer
+              key={openModal ? "opened" : "closed"}
               className="absolute top-0 left-0"
               width="100%"
               height="100%"
@@ -166,6 +182,7 @@ const BonusModal = ({
                 name === "PARIONS SPORT" ? "PARIONSSPORT" : name
               }.webp`}
               controls={true}
+              playing={isPlaying}
             />
           </div>
         )}
