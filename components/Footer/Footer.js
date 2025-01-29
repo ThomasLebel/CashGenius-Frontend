@@ -6,13 +6,19 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhoneAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="w-screen bg-[#0E1116] flex justify-center">
       <div className="p-10 text-white lg:flex lg:justify-between lg:w-4/5">
         <div className="lg:w-1/4 lg:mr-10">
           <div className="w-2/4">
-            <Image src="/CashGeniusLogoWhite.png" alt="Logo Cash Genius" width={500} height={60} />
+            <Image
+              src="/CashGeniusLogoWhite.png"
+              alt="Logo Cash Genius"
+              width={500}
+              height={60}
+            />
           </div>
           <p className="mt-5">
             <span className="font-bold">Cash Genius 400€</span> - Programme
@@ -23,19 +29,23 @@ const Footer = () => {
         </div>
         <div className="lg:w-1/4">
           <h2 className="mt-5 font-bold text-2xl lg:mt-0">Liens Rapide</h2>
-          <div className="mt-5">
-            <span className="underline underline-offset-4">Mention légales</span>
+          <div className="mt-5 !underline !underline-offset-4">
+            <Link href="/mentions-legales">Mention légales</Link>
           </div>
-          <div className="mt-3">
-            <span className="underline underline-offset-4">
+          <div className="mt-3 underline underline-offset-4">
+            <Link href="/politique-confidentialite">
               Politique de confidentialité
-            </span>
+            </Link>
           </div>
         </div>
         <div className="lg:w-1/4">
           <h2 className="mt-5 font-bold text-2xl lg:mt-0">Rejoignez-nous</h2>
           <div className="mt-5 flex flex-row">
-            <a href="https://www.facebook.com/CashGenius38" target="_blank" aria-label="Visiter notre Facebook">
+            <a
+              href="https://www.facebook.com/CashGenius38"
+              target="_blank"
+              aria-label="Visiter notre Facebook"
+            >
               <FontAwesomeIcon
                 className="mr-5 hover:text-mainColor"
                 icon={faFacebook}
@@ -44,7 +54,11 @@ const Footer = () => {
               ></FontAwesomeIcon>
             </a>
 
-            <a href="https://www.instagram.com/cash_genius/" target="_blank" aria-label="Visiter notre Instagram">
+            <a
+              href="https://www.instagram.com/cash_genius/"
+              target="_blank"
+              aria-label="Visiter notre Instagram"
+            >
               <FontAwesomeIcon
                 className="mr-5  hover:text-mainColor"
                 icon={faInstagram}
@@ -52,7 +66,11 @@ const Footer = () => {
                 color="white"
               ></FontAwesomeIcon>
             </a>
-            <a href="https://www.youtube.com/c/CashGenius" target="_blank" aria-label="Visiter notre Youtube">
+            <a
+              href="https://www.youtube.com/c/CashGenius"
+              target="_blank"
+              aria-label="Visiter notre Youtube"
+            >
               <FontAwesomeIcon
                 className="mr-5  hover:text-mainColor"
                 icon={faYoutube}
@@ -71,7 +89,11 @@ const Footer = () => {
               size="xl"
               color="#f51465"
             ></FontAwesomeIcon>
-            <a href="mailto:contact@cash-genius.com"><span className="hover:text-mainColor">contact@cash-genius.com </span></a>
+            <a href="mailto:contact@cash-genius.com">
+              <span className="hover:text-mainColor">
+                contact@cash-genius.com{" "}
+              </span>
+            </a>
           </div>
         </div>
       </div>
