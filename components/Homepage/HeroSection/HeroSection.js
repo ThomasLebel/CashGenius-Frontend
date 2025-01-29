@@ -1,9 +1,10 @@
 import Button from "../../Shared/Button";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
     <section
-      className=" h-[110vh] flex flex-col justify-center  w-screen relative xl:overflow-hidden xl:pt-48"
+      className=" h-[110vh] flex flex-col justify-center  w-screen relative xl:overflow-hidden xl:pt-0"
       style={{
         backgroundImage: `url(/background_image.webp)`,
         backgroundPosition: "right 35% bottom 40%",
@@ -16,9 +17,11 @@ const HeroSection = () => {
           Gagne jusqu'à 400€ grâce aux bonus des plus grands sites de paris
           sportifs.
         </h1>
+        <Link href="#inscription">
         <div className="mb-28 mt-10">
         <Button name="JE M'INSCRIS AU GENIUS PROGRAMME" bgColor="bg-white" textColor="text-mainColor"></Button>
         </div>
+        </Link>
         <div
           className="absolute -bottom-2 left-0 min-h-[80px] w-screen"
           style={{

@@ -1,6 +1,7 @@
 import InstagramCarousel from "./InstagramCarousel";
 import ReviewCarousel from "./ReviewCarousel";
 import Button from "../../Shared/Button";
+import Link from "next/link";
 
 const Reviews = () => {
   return (
@@ -22,9 +23,11 @@ const Reviews = () => {
           dès maintenant le <span className="font-bold">GENIUS PROGRAMME.</span>
         </p>
         <ReviewCarousel />
+        <Link href="#inscription">
         <div className="mt-5"> 
         <Button name="JE M'INSCRIS AU GENIUS PROGRAMME"></Button>
         </div>
+        </Link>
         <div
           className="-bottom-2 left-0 min-h-[80px] w-screen mt-20"
           style={{

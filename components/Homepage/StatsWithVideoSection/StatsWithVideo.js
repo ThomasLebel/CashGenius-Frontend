@@ -2,6 +2,7 @@ import NumberIncrementation from "./NumberIncrementation";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import Button from "../../Shared/Button";
+import Link from "next/link";
 
 import dynamic from "next/dynamic";
 
@@ -70,7 +71,11 @@ const StatsWithVideo = () => {
             controls={true}
           />
         </div>
+        <Link href="#inscription">
+        <div>
         <Button className="pt-10" name="JE M'INSCRIS AU GENIUS PROGRAMME"></Button>
+        </div>
+        </Link>
       </div>
     </section>
   );
