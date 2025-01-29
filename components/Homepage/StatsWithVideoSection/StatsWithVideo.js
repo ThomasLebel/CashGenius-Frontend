@@ -31,7 +31,7 @@ const StatsWithVideo = () => {
     <section>
       <div className="flex flex-col items-center mt-10 ">
         <h1 className="font-bold text-2xl text-center md:text-4xl w-3/4">
-          PROGRAMME CASH GENIUS 🧞‍♂️
+          GENIUS PROGRAMME 🧞‍♂️
         </h1>
         <p className="text-secondaryColor font-light text-sm mt-5 text-center px-10 md:text-lg">
           Programme de 4 à 5 semaines <span className="font-bold">GRATUIT</span>{" "}

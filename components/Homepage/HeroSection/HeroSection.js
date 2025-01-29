@@ -3,10 +3,10 @@ import Button from "../../Shared/Button";
 const HeroSection = () => {
   return (
     <section
-      className=" xl:h-4/5 flex flex-col justify-center  w-screen relative xl:overflow-hidden xl:pt-48"
+      className=" h-[110vh] flex flex-col justify-center  w-screen relative xl:overflow-hidden xl:pt-48"
       style={{
         backgroundImage: `url(/background_image.webp)`,
-        backgroundPosition: "right 40% bottom 40%",
+        backgroundPosition: "right 35% bottom 40%",
         backgroundSize: "cover",
       }}
     >
