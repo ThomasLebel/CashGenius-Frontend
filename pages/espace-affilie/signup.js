@@ -1,0 +1,27 @@
+import Home from "../../components/Homepage/Home"
+import Head from "next/head";
+import Header from "../../components/Header/Header";
+import SignupTitle from "../../components/EspaceAffilie/Signup/SignupTitle";
+import SignupForm from "../../components/EspaceAffilie/Signup/SignupForm";
+import Footer from "../../components/Footer/Footer";
+
+function EspaceAffilieSignup() {
+
+  return (
+    <>
+      <Head>
+        <title>Espace Affilié - Cash Genius</title>
+        <meta name="description" content="Rejoignez notre programme d'affiliation et commencez à gagner des commissions en recommandant le Genius Programme à vos proches."/>
+        <meta name="keywords" content="cash genius parrainage, genius programme parrainage, cash genius affiliation, genius programme affiliation"/>
+      </Head>
+      <Header/>
+      <main className=" font-sans">
+        <SignupTitle/>
+        <SignupForm/>
+      </main>
+      <Footer/>
+    </>
+  );
+}
+
+export default EspaceAffilieSignup;

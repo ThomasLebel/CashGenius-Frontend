@@ -1,7 +1,8 @@
-import Home from "../components/Homepage/Home";
+import Home from "../components/Homepage/Home"
 import Head from "next/head";
 
 function Index() {
+
   return (
     <>
       <Head>

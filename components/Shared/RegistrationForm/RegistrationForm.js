@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "../Button";
 
 
-const RegistrationForm = () => {
+const RegistrationForm = ({referralCode = ""}) => {
+
   const [firstName, setFirstName] = useState("");
   const [lastname, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -12,6 +13,10 @@ const RegistrationForm = () => {
   const [registred, setRegistred] = useState(false);
   const [loading, setLoading] = useState(false)
 
+  useEffect(() => {
+    setSponsorship(referralCode)
+  },[referralCode])
+  
   const emailPattern =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const phonePattern = /^(0|\+33)[1-9]([-. ]?[0-9]{2}){4}$/;
@@ -50,6 +55,14 @@ const RegistrationForm = () => {
         });
     }
   };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSubmit();
+    }
+  };
+
+
   return (
     <section id="inscription">
       <div className=" w-screen flex flex-col items-center py-20">
@@ -85,6 +98,7 @@ const RegistrationForm = () => {
                 placeholder="Prénom"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
+                onKeyDown={handleKeyDown}
                 className="form-input lg:mx-5"
               ></input>
               <input
@@ -92,6 +106,7 @@ const RegistrationForm = () => {
                 placeholder="Nom"
                 value={lastname}
                 onChange={(e) => setLastName(e.target.value)}
+                onKeyDown={handleKeyDown}
                 className="form-input lg:mx-5"
               ></input>
             </div>
@@ -101,6 +116,7 @@ const RegistrationForm = () => {
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                onKeyDown={handleKeyDown}
                 className="form-input lg:mx-5"
               ></input>
               <input
@@ -108,6 +124,7 @@ const RegistrationForm = () => {
                 placeholder="Téléphone"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
+                onKeyDown={handleKeyDown}
                 className="form-input lg:mx-5"
               ></input>
             </div>
@@ -117,6 +134,7 @@ const RegistrationForm = () => {
                 placeholder="Code parrainage (Facultatif)"
                 value={sponsorship}
                 onChange={(e) => setSponsorship(e.target.value)}
+                onKeyDown={handleKeyDown}
                 className="form-input lg:mx-5 lg:w-2/4"
               ></input>
             </div>

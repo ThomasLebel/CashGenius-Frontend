@@ -20,50 +20,45 @@ function Header({ drawerActive, currentPage, closeDrawer }) {
           right: 30,
         }}
       >
-        <CloseOutlined
-          style={{ fontSize: "20px" }}
-          onClick={closeDrawer}
-        />
+        <CloseOutlined style={{ fontSize: "20px" }} onClick={closeDrawer} />
       </div>
       <nav>
         <ul className="flex flex-col justify-around font-sans font-medium text-sm h-1/3 mt-12">
-          <li
-            className={`${
-              currentPage === "/" && "border"
-            } drawer-item`}
-          >
-            <Link href="/" className="menu-link">GENIUS PROGRAMME</Link>
+          <li className={`${currentPage === "/" && "border"} drawer-item`}>
+            <Link href="/" className="menu-link">
+              GENIUS PROGRAMME
+            </Link>
           </li>
           <li
             className={`${
               currentPage === "/comparateur-bonus" && "border"
             } drawer-item`}
           >
-            <Link href="/comparateur-bonus" className="menu-link">LES BONUS</Link>
+            <Link href="/comparateur-bonus" className="menu-link">
+              LES BONUS
+            </Link>
           </li>
           <li
             className={`${
               currentPage === "/tutoriels" && "border"
             } drawer-item`}
           >
-            <Link href="/tutoriels" className="menu-link">LES TUTOS</Link>
+            <Link href="/tutoriels" className="menu-link">
+              LES TUTOS
+            </Link>
           </li>
           <li
-            className={`${
-              currentPage === "/tutos" && "border"
-            } drawer-item`}
+            className={`${currentPage === "/espace-affilie/login" || currentPage === "/espace-affilie/signup" || currentPage === "/espace-affilie/dashboard" ? "border" : ""} drawer-item`}
           >
-            <Link href="#inscription" className="menu-link">INSCRIPTION GRATUITE</Link>
-          </li>
-          {/* <li
-            className={`${
-              currentPage === "/affilies" && "border"
-            } drawer-item`}
-          >
-            <a className="menu-link">
+            <Link href="/espace-affilie/login" className="menu-link">
               ESPACE AFFILIÉ
-            </a>
-          </li> */}
+            </Link>
+          </li>
+          <li className={`${currentPage === "/tutos" && "border"} drawer-item bg-mainColor text-white hover:!text-white hover:!bg-[#ac054a] !p-2`}>
+            <Link href={`${currentPage === "/espace-affilie/login" || currentPage === "/espace-affilie/signup" || currentPage === "/espace-affilie/dashboard" ? "/#inscription" : "#inscription"}`} className="menu-link">
+              INSCRIPTION GRATUITE
+            </Link>
+          </li>
         </ul>
       </nav>
     </Drawer>

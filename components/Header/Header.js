@@ -20,7 +20,7 @@ function Header() {
   }
 
   return (
-      <header className="w-screen h-[70px] bg-white flex items-center justify-between  fixed z-50 top-0 drop-shadow-sm">
+      <header className="w-full h-[70px] bg-white flex items-center justify-between  fixed z-50 top-0 drop-shadow-sm">
         <Link href="/" className="menu-link">
         <div className="ml-5 cursor-pointer w-32 sm:w-56 flex items-center">
           <Image  width={208} height={25} src="/CashGeniusLogo.png" alt="Logo Cash Genius" className="w-full h-full object-cover"></Image> 

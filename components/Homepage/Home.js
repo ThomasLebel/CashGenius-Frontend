@@ -8,7 +8,7 @@ import RegistrationForm from "../Shared/RegistrationForm/RegistrationForm";
 import Footer from "../Footer/Footer";
 
 
-function Home() {
+const Home = ({referralCode = ""}) => {
 
   return (
     <>
@@ -21,7 +21,7 @@ function Home() {
         <Steps/>
         <Reviews/>
         <FAQ/>
-        <RegistrationForm/>
+        <RegistrationForm referralCode={referralCode}/>
       </main>
       <Footer></Footer>
     </>
