@@ -162,7 +162,7 @@ const DashboardSection = () => {
           <div className="w-4/5 h-full rounded-lg flex items-center  justify-center">
             <input
               readOnly
-              defaultValue={`http://localhost:3001/${user.referralCode}#inscription`}
+              defaultValue={`https://cash-genius-frontend.vercel.app/${user.referralCode}#inscription`}
               className="w-full h-full rounded-lg ml-2 font-semibold text-sm text-secondaryColor underline p-2"
             ></input>
           </div>
@@ -170,7 +170,7 @@ const DashboardSection = () => {
             className="w-1/5 rounded-xl h-full flex justify-end items-center pr-3 cursor-pointer"
             onClick={() =>
               copyLinkButton(
-                `http://localhost:3001/${user.referralCode}#inscription`
+                `https://cash-genius-frontend.vercel.app/${user.referralCode}#inscription`
               )
             }
           >
