@@ -43,7 +43,7 @@ const TutorialVideos = () => {
             className="absolute top-0 left-0"
             width="100%"
             height="100%"
-            url="https://youtu.be/5gw5fqD2_Pc"
+            url={videoLink}
             controls={true}
             light={`/MiniaturesTutos/${websiteSelected === "PARIONS SPORT" ? "PARIONSSPORT.webp" : `${websiteSelected}.webp`}`}
           />
