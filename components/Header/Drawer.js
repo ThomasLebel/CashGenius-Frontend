@@ -12,6 +12,9 @@ function Header({ drawerActive, currentPage, closeDrawer }) {
       styles={{
         header: { padding: "0", borderBottom: "none" },
       }}
+
+      maskClosable={true}
+      onClose={closeDrawer}
     >
       <div
         style={{

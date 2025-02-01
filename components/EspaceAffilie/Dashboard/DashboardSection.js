@@ -26,14 +26,13 @@ const DashboardSection = () => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-
     setIsClient(true);
     if (user && user.token) {
       fetch(`${process.env.NEXT_PUBLIC_SERVER_IP}/users/${user.token}`)
-      .then(response => response.json())
-      .then(data => {
-        dispatch(refreshData(data))
-      })
+        .then((response) => response.json())
+        .then((data) => {
+          dispatch(refreshData(data));
+        });
     }
   }, []);
 
@@ -45,44 +44,60 @@ const DashboardSection = () => {
     return null;
   }
 
+  // Calcul nombre d'inscrits 
+  let nbRegistration = 0 
+  if (user.referredUsersInfos) {
+    for (let referredUser of user.referredUsersInfos) {
+      if (referredUser.referredUserInfos) {
+        nbRegistration += 1
+      }
+    }
+  }
+
   // Compte le total de commissions
   let totalCommissions = 0;
   if (user.referredUsersInfos) {
     for (let referredUser of user.referredUsersInfos) {
-      totalCommissions += referredUser.referredUserInfos.commission;
+      if (referredUser.referredUserInfos) {
+        totalCommissions += referredUser.referredUserInfos.commission;
+      }
     }
   }
 
   // Liste les participants à afficher
-  let applicantsSortedByDate = []
-  if (user.referredUsersInfos.length > 0){
+  let applicantsSortedByDate = [];
+  if (user.referredUsersInfos.length > 0) {
     applicantsSortedByDate = [...user.referredUsersInfos].sort((a, b) => {
-      const dateA = new Date(a.referredUserInfos.createdAt);
-      const dateB = new Date(b.referredUserInfos.createdAt);
-      return dateB - dateA;
+      if (a.referredUserInfos) {
+        const dateA = new Date(a.referredUserInfos.createdAt);
+        const dateB = new Date(b.referredUserInfos.createdAt);
+        return dateB - dateA;
+      }
     });
   }
 
   const applicantsToShow = applicantsSortedByDate.map((e, i) => {
-    const applicant = e.referredUserInfos;
-    if (statusChoice === "Tout") {
-      return (
-        <ApplicantCard
-          firstname={applicant.firstname}
-          lastname={applicant.lastname}
-          createdAt={applicant.createdAt}
-          status={applicant.status}
-        />
-      );
-    } else if (statusChoice === applicant.status) {
-      return (
-        <ApplicantCard
-          firstname={applicant.firstname}
-          lastname={applicant.lastname}
-          createdAt={applicant.createdAt}
-          status={applicant.status}
-        />
-      );
+    if (e.referredUserInfos) {
+      const applicant = e.referredUserInfos;
+      if (statusChoice === "Tout") {
+        return (
+          <ApplicantCard
+            firstname={applicant.firstname}
+            lastname={applicant.lastname}
+            createdAt={applicant.createdAt}
+            status={applicant.status}
+          />
+        );
+      } else if (statusChoice === applicant.status) {
+        return (
+          <ApplicantCard
+            firstname={applicant.firstname}
+            lastname={applicant.lastname}
+            createdAt={applicant.createdAt}
+            status={applicant.status}
+          />
+        );
+      }
     }
   });
 
@@ -162,7 +177,7 @@ const DashboardSection = () => {
           <div className="w-4/5 h-full rounded-lg flex items-center  justify-center">
             <input
               readOnly
-              defaultValue={`https://cash-genius-frontend.vercel.app/${user.referralCode}#inscription`}
+              defaultValue={`https://cash-genius.vercel.app/${user.referralCode}#inscription`}
               className="w-full h-full rounded-lg ml-2 font-semibold text-sm text-secondaryColor underline p-2"
             ></input>
           </div>
@@ -170,7 +185,7 @@ const DashboardSection = () => {
             className="w-1/5 rounded-xl h-full flex justify-end items-center pr-3 cursor-pointer"
             onClick={() =>
               copyLinkButton(
-                `https://cash-genius-frontend.vercel.app/${user.referralCode}#inscription`
+                `https://cash-genius.vercel.app/${user.referralCode}#inscription`
               )
             }
           >
@@ -193,7 +208,7 @@ const DashboardSection = () => {
           <DashboardCard
             icon={faFileSignature}
             title="Nombre d'inscriptions"
-            value={user.referredUsersInfos.length}
+            value={nbRegistration}
           />
           <DashboardCard
             icon={faWallet}

@@ -43,12 +43,12 @@ function Menu({ currentPage }) {
             ? "/#inscription"
             : "#inscription"
         }`}
-        className="menu-link"
+        className="menu-link "
       >
         <li
           className={`${
             currentPage === "/#inscription" && "border"
-          } menu-item px-3 mr-3 bg-mainColor text-white hover:!text-white hover:!bg-[#ac054a]`}
+          } menu-item px-3 mr-3 bg-mainColor text-white hover:!text-white hover:!bg-[#ac054a] ml-5`}
         >
           INSCRIPTION GRATUITE
         </li>
