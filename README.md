@@ -25,24 +25,27 @@
 
 ## 📸 Aperçu
 
-|Accueil | Recherche |
+|Hero Section | Présentation du programme |
 |:-------:|:---------:|
-|![VendTout_Accueil](https://github.com/user-attachments/assets/81688f03-f934-4797-ae85-d114b14d78eb)|![VendTout_Recherche](https://github.com/user-attachments/assets/de583d34-fd88-4337-bb5f-bd2592b41f81)|
-|**Article** | **Profil** |
-|![VendTout_Article](https://github.com/user-attachments/assets/fa66d1c2-d90e-483e-aafa-5db38e5e7c9b)|![VendTout_Profil](https://github.com/user-attachments/assets/fcf16637-7de3-4a96-8736-4653f752d4a1)|
-|**Favoris** | **Publication d'annonce** |
-|![VendTout_Favoris](https://github.com/user-attachments/assets/265a10cd-6b1f-4ab5-a1b7-d6bc2eaac24d)|![VendTout_Publication d'annonce](https://github.com/user-attachments/assets/01c15ccc-b0d8-4101-9ecb-b4091c3a299e)|
-|**Commande** | **Messagerie instantanée** |
-|![VendTout_Commande](https://github.com/user-attachments/assets/a28f857a-b89a-4280-b842-db2781503d0c)|![VendTout_Messaerie_Instantanée](https://github.com/user-attachments/assets/1c970d49-5d0f-426c-9f30-e284c83688b5)|
+|![Hero Section](https://github.com/user-attachments/assets/2a0ead46-529c-4c9f-97e3-70fd4fff3d54)|![Présentation Programme](https://github.com/user-attachments/assets/d09ad909-f5a0-478f-bc76-e6de887d4482)|
+|**Déroulé programme** | **Témoignages** |
+|![Déroulé programme](https://github.com/user-attachments/assets/da2704f9-6055-479d-9570-9a4602c8846a)|![Témoignages Vidéos](https://github.com/user-attachments/assets/1a0dd0f8-1d30-402e-9f1e-832fc5a02272)|
+|**Avis** | **FAQ** |
+|![Avis](https://github.com/user-attachments/assets/ac7c3d46-ed16-492c-a97f-3b7d8725c807)|![FAQ](https://github.com/user-attachments/assets/eb161fff-dc58-4b2e-901f-e68a3f36d597)|
+|**Formulaire inscription** | **Comparateur bonus** |
+|![Formulaire inscription](https://github.com/user-attachments/assets/71a892b4-34fb-4ab2-bb86-e83ab3524a29)|![Comparateur bonus](https://github.com/user-attachments/assets/9296c4f0-f92a-467a-b48f-59f944880b97)|
+|**Infos bonus** | **Vidéos tutos** |
+|![Infos bonus](https://github.com/user-attachments/assets/ce190903-f248-4ac7-a48c-66190ab877f4)|![Vidéo tutos](https://github.com/user-attachments/assets/a59b4f77-4c9d-481a-9106-81184e176b29)|
+|**Espace Affilié** | **Suivi des parrainages** |
+|![Espace Affilié](https://github.com/user-attachments/assets/c7d17862-34d7-47cc-b862-abb2036e813a)|![Parrainage en cours](https://github.com/user-attachments/assets/970966fd-8e7e-43fb-8f0a-a18def9fe1c2)|
 
-## ⚙️ Fonctionnalités techniques
-* **Gestion d’état** via useState / useEffect + requêtes API avec fetch
-* **TypeScript** : typage strict, interfaces des objets
-* **Firestore** : gestion d’un chat en live
-* **Dotenv** : gestion sécurisée des variable d'environnement
-* **Moment.js** : formatage des dates
+## ⚙️ Librairies utilisées
 * **Tailwind CSS** : design responsive et personnalisé avec utilitaires css
-* **FontAwesome / HeroIcons** : icônes modernes et cohérentes dans toute l'UI.
+* **Animated-number-react** : animation des chiffres clés
+* **Antd** : modales et drawer
+* **React-player** : lecteur vidéos youtube
+* **React-spinner** : animation spinner pour les chargements
+* **Swiper** : sliders dynamiques et infini
 
 ## 👨‍💻 Auteur
 Thomas Lebel\
